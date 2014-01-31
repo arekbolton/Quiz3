@@ -13,6 +13,31 @@
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([Quiz3AppDelegate class]));
+        //Declaration of variables
+        NSString *firstName;
+        NSMutableArray *fruits = [[NSMutableArray alloc] init];
+        NSUInteger *myUInteger;
+        
+        
+        //setting of variables declared prior
+        [myName initWithString:@"Arek"];
+        
+        [fruits addObject:@"Apples"];
+        [fruits addObject:@"Pears"];
+        [fruits addObject:@"Oranges"];
+        
+        
+        NSLog(@"%", myName);
+        
+        for (int i=0; i<[fruits count]; i++) {
+            NSLog(@"%@", [fruits objectAtIndex:i]);
+        }
+        
+        //destroying array pointed to by items
+        fruits = nil;
+        
+        
     }
+    
+    
 }
