@@ -20,14 +20,14 @@ int main(int argc, char * argv[])
         
         
         //setting of variables declared prior
-        [myName initWithString:@"Arek"];
+        [firstName initWithString:@"Arek"];
         
         [fruits addObject:@"Apples"];
         [fruits addObject:@"Pears"];
         [fruits addObject:@"Oranges"];
         
         
-        NSLog(@"%", myName);
+        NSLog(@"%", firstName);
         
         for (int i=0; i<[fruits count]; i++) {
             NSLog(@"%@", [fruits objectAtIndex:i]);
